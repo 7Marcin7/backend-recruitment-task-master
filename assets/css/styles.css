@@ -1,0 +1,219 @@
+/*Add your custom styles here*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 50px;
+    height: auto;
+}
+.starting-title {
+    text-align: center;
+}
+
+/*TABLE*/
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+/*END TABLE*/
+
+
+/*BUTTON REMOVE AND SUBMIT*/
+.mr-button-remove, .mr-button-submit {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 10px 12px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.mr-button-remove:hover,
+.mr-button-remove:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.mr-button-submit:hover,
+.mr-button-submit:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #0a99cd;
+}
+
+.mr-button-remove:active {
+    opacity: 0.5;
+}
+.mr-button-submit:active {
+    opacity: 0.5;
+}
+/*BUTTON REMOVE AND SUBMIT END*/
+
+/*BUTTON SUBMIT*/
+.mr-button-submit{
+    background: #0a99cd;
+    border: 1px solid #0a99cd;
+}
+/*BUTTON SUBMIT END*/
+
+
+/*MODAL*/
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Float cancel, delete, submit buttons and add an equal width */
+.cancelbtn, .deletebtn, .submitbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+    background-color: #f44336;
+}
+
+/* Add a color to the submit button */
+.submitbtn {
+    background-color: #1baade;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+    padding: 16px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0, 0.2);
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button, delete, submit button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn, .submitbtn {
+        width: 100%;
+    }
+}
+/*MODAL END*/
+
+
+/*MODAL SUBMIT*/
+.mr-form-submit-row{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .mr-form-submit-row {
+        flex-direction: column;
+    }
+}
+
+/*MODAL SUBMIT END*/
+
+/*VALIDATE*/
+.mrValidate{
+    color: #f44336;
+    font-size: 11px;
+}
